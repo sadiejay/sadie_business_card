@@ -18,7 +18,7 @@ color: rgba(72, 229, 194, .6);
 
 body{
 
-	background-color: #F3D3BD;
+	background-color: #a99bbf;
 	background-image: url(../images/cloud.png), url(../images/tri.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -70,18 +70,19 @@ h1{
 
 h2{
 	font-family: 'Zilla Slab', serif;
-	color: #48E5C2;
+	color: #a99bbf;
+	font-weight: 500;
 	font-size: 1rem;
 	margin-bottom: .7rem;
 	padding: 0rem .75rem 0rem;
 	text-align: center;
-	border-bottom: 2px solid #48E5C2;
+	border-bottom: 2px solid #bd8332;
 
 }
 
 p{
 	font-family: 'Lato', sans-serif;
-	color: #333333;
+	color: #0b120c;
 	font-size: .75rem;
 	padding: 0rem .75rem 0rem
 
@@ -106,8 +107,8 @@ a:link, a:visited{
 a:hover, a:active{
 
 	background: rgba(0,0,0,0);
-	color: #48E5C2;
-	box-shadow: inset 0 0 0 3px #48E5C2;
+	color: #bd8332;
+	box-shadow: inset 0 0 0 1px #bd8332;
 }
 
 /*
@@ -216,7 +217,7 @@ h1{
 }
 
 h2{
-	color: #48E5C2;
+
 	font-size: 1.5rem;
 	margin-top: 1rem;
 	margin-bottom: .7rem;
@@ -227,7 +228,7 @@ h2{
 }
 
 p{
-	font-size: 1rem;
+	font-size: 1.1rem;
 	text-align: center;
 }
 
