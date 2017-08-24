@@ -1,0 +1,240 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+/*
+
+font-family: 'Clicker Script', cursive;
+font-family: 'Roboto', sans-serif;
+color: rgba(72, 229, 194, .6);
+    text-shadow: 2px 2px 3px rgba(24, 170, 138, .1)
+
+*/
+
+body{
+
+	background-color: #F3D3BD;
+	background-image: url(../images/cloud.png), url(../images/tri.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center, top right;
+
+
+}
+
+.container{
+	width: 100%;
+	margin:auto;
+	background-color: #F3D3BD;
+	background-image: url(../images/cloud.png), url(../images/tri.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center, top right;
+
+
+}
+
+h1, h2, p{
+
+	padding: .3rem;
+}
+
+
+h1{
+	font-family: 'Clicker Script', cursive;
+	font-size: 4rem;
+	line-height: 3.5rem;
+	background-color: #666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+	text-align: center;
+	padding-top: .35rem;
+	padding-bottom: .95rem;
+	margin-bottom: 1rem;
+	margin-top: .5rem;
+
+
+
+}
+
+h2, p{
+
+	font-family: 'Roboto', sans-serif;
+	color: #333333;
+
+
+}
+
+h2{
+	color: #48E5C2;
+	font-size: 1rem;
+	
+	margin-bottom: .7rem;
+	padding: 0rem .75rem 0rem;
+	text-align: center;  
+	border-bottom: 2px solid #48E5C2;
+
+}
+
+p{
+	font-size: .75rem;
+	padding: 0rem .75rem 0rem 
+
+}
+
+.back h2{
+	
+	margin-bottom: 3rem;
+}
+
+.back p{
+
+	text-align: center;
+
+}
+a:link, a:visited{
+	text-decoration: none;
+	color: #333;
+
+}
+
+a:hover, a:active{
+
+	background: rgba(0,0,0,0);
+	color: #48E5C2;
+	box-shadow: inset 0 0 0 3px #48E5C2;
+}
+
+/*
+article{
+	height: 100vh;
+	
+
+
+
+}
+*/
+
+/*
+	https://www.w3.org/Style/Examples/007/center.en.html#vertical 
+	*/
+
+
+.flip-container{
+	background-color: #FFF;
+	opacity: .85;
+	right: 50%;
+	position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    	-webkit-transform: translate(-50%, -50%);
+
+}
+
+
+/****
+
+	https://davidwalsh.name/css-flip
+
+***/
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 100%;
+		-webkit-perspective: 100%;
+
+
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg);
+	
+	}
+
+.flip-container, .front, .back {
+	width: 100%;
+	height: 30%;
+
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+		-webkit-transition: 0.6s;
+	transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+		-webkit-transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+}
+
+/**********************/
+
+/****** Media Queries 580px and up ****/
+
+@media (min-width: 580px){
+
+	.flip-container, .front, .back {
+	width: 90%;
+	height: 40%;
+
+}
+h1{
+	font-size: 5rem;
+	padding-top: 1rem;
+	padding-bottom: 1.7rem;
+}
+
+h2{
+	color: #48E5C2;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	margin-bottom: .7rem;
+	padding: 0rem .75rem 0rem;
+	text-align: center;  
+	border-bottom: none;
+	
+}
+
+p{
+	font-size: 1rem;
+	text-align: center;
+}
+
+
+}
